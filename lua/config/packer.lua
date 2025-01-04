@@ -14,6 +14,12 @@ return require('packer').startup(function(use)
   }
 
   use { "scottmckendry/cyberdream.nvim", vim.cmd("colorscheme cyberdream") }
+
   use({'nvim-treesitter/nvim-treesitter', tag = 'v0.9.3', run = ':TSUpdate'})
+  use('nvim-treesitter/playground')
+  
+  use('theprimeagen/harpoon')
+  use('mbbill/undotree')
+  use('tpope/vim-fugitive')
 
 end)
